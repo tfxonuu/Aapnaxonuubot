@@ -1,4 +1,4 @@
-tu#🇳‌🇮‌🇰‌🇭‌🇮‌🇱‌
+#🇳‌🇮‌🇰‌🇭‌🇮‌🇱‌
 # Add your details here and then deploy by clicking on HEROKU Deploy button
 import os
 from os import environ
@@ -18,5 +18,6 @@ AUTH_USER = os.environ.get('AUTH_USERS', '7533484450').split(',')
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
 if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
+
 
 
